@@ -5,9 +5,7 @@ import mediapipe as mp
 import base64
 from io import BytesIO
 from PIL import Image
-
 app = FastAPI()
-
 mp_pose = mp.solutions.pose
 pose = mp_pose.Pose(static_image_mode=True, min_detection_confidence=0.5)
 
